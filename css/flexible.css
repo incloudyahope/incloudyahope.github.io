@@ -1,0 +1,168 @@
+.padding-right20px{
+	padding-right: 20px;
+}
+
+#nav-right-top-pc-hide{
+	float: right;
+	padding-top: 0px;
+	padding-right: 10px;
+	display: block;
+}
+
+#nav-right-top
+{
+	padding-top: 15px;
+	padding-right: 16px;
+	display: block;
+
+}
+
+#id-transparent1{
+	background-color:transparent;margin: -15px -22px -14px;
+
+}
+
+#id-col-roght{
+	color: black;width:100% ;
+}
+
+.li-icon{
+	padding-top: 7px;
+	padding-right: 15px;
+}
+
+.pad-right2-ph20px{
+	padding-right: 5px;
+	padding-top: 24px;
+}
+/*@media screen and (min-width: 1427px) {
+	#content{
+		margin-left: 165px;
+	}
+
+	#search-large{
+		margin-left: 440px;
+	}
+}
+
+@media screen and (min-width: 1437px) {
+	#content{
+		margin-left: 155px;
+	}
+	#search-large{
+		margin-left: 445px;
+	}
+}
+
+@media screen and (min-width: 1447px) {
+	#content{
+		margin-left: 145px;
+	}
+
+	#search-large{
+		margin-left: 445px;
+	}
+}
+*/
+@media screen and (min-width: 1457px) {
+	#content{
+		margin-left: 140px;
+	}
+}
+
+@media screen and (min-width: 1467px) {
+	#content{
+		margin-left: 135px;
+	}
+}
+
+@media screen and (min-width: 1477px){
+	#content{
+		margin-left: 125px;
+	}
+}
+
+@media screen and (min-width: 1487px) {
+	#content{
+		margin-left: 115px;
+	}
+}
+
+@media screen and (min-width: 1497px) {
+	#content{
+		margin-left: 105px;
+	}
+}
+
+@media screen and (min-width: 1507px) {
+	#content{
+		margin-left: 95px;
+	}
+}
+
+@media screen and (min-width: 1517px) {
+	#content{
+		margin-left: 85px;
+	}
+}
+
+@media screen and (min-width: 1527px) {
+	#content{
+		margin-left: 75px;
+	}
+}
+
+@media screen and (min-width: 1537px) {
+	#content{
+		margin-left: 55px;
+	}
+}
+
+@media screen and (min-width: 1547px) {
+	#content{
+		margin-left: 45px;
+	}
+}
+
+@media screen and (min-width: 2660) {
+	#content{
+		margin-left: -35px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.padding-right20px{
+		padding-right: 0px;
+	}
+
+	#id-transparent1{
+		background-color:transparent;margin: -4px -185px -5px;
+		padding: initial;
+		padding-top: 5px;
+	}
+
+	#nav-right-top-pc-hide{
+		float: right;
+		padding-top: 0px;
+		padding-right: 0px;
+		display: block;
+	}
+
+	.pad-right2-ph20px{
+		padding-right: 31px;
+		padding-top: 24px;
+	}
+
+	#nav-right-top
+	{
+		padding-top: 15px;
+		padding-right: 16px;
+		display: none;
+	}
+
+	.li-icon{
+		margin: -16px;
+		padding-right: 24px;
+	}
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <title>login - Akun Gratika Accounts</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../https://aplikasi2.gratika.id/damia/logo.jpg" type="image/x-icon" />
+
+    <!-- description -->
+    <meta name="description"
+        content="PT GEMANUSA SENTRA TEKNOLOGI , Alamat Tangcity Business Park D25 Jl. Jendral Sudirman No. 1 Tangerang 15117 , Phone : (+62-21) 2923-9669 , Fax : (+62-21) 2923-9672">
+    <!-- Keywords -->
+    <meta name="keywords"
+        content="Gratika Accounts Accounts , PT. Gemanusa Sentra Teknologi , Developer Software , IT , Technology , System Banking , AI , Developer Indonesia , Website Indonesia , Chip Arena , HIQ">
+
+    <!-- Google Fosnts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap Core Css -->
+    <link href="../plugins/bootstrap/css/bootstrap.css?v=1.6.1" rel="stylesheet" />
+    <!-- Waves Effect Css -->
+    <link href="../plugins/node-waves/waves.css?v=1.6.1" rel="stylesheet" />
+    <!-- Animation Css -->
+    <link href="../plugins/animate-css/animate.css?v=1.6.1" rel="stylesheet" />
+    <!-- Custom Css -->
+    <link href="../css/style-login.css?v=1.6.1" rel="stylesheet" />
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../css/themes/all-themes.css?v=1.6.1" rel="stylesheet" />
+    <link href="../css/modif-style.css?v=1.6.1" rel="stylesheet" />
+    <style>
+        .form-login-card {
+            box-shadow: 14px 4px 24px 7px rgba(0, 0, 0, 0.64);
+            -webkit-box-shadow: 14px 4px 24px 7px rgba(0, 0, 0, 0.64);
+            -moz-box-shadow: 14px 4px 24px 7px rgba(0, 0, 0, 0.64);
+        }
+
+        .login-box {
+            background-color: transparent;
+        }
+
+        .form-login-page {
+            background-image: url("https://wallpapers.com/images/hd/red-texture-background-1920-x-1080-6cncopqwlb4lrtli.jpg");
+        }
+
+        @media(max-width:552px) {
+            .login-box {
+                background-color: white;
+            }
+
+            .form-login-card {
+                box-shadow: unset;
+                -webkit-box-shadow: unset;
+                -moz-box-shadow: unset;
+            }
+        }
+    </style>
+</head>
+
+<body class="theme-red" style="background-color: white;font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;">
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Loading System...</p>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <section class="form-login-page">
+        <div class="login-box">
+            <form action="../password">
+                <div class="card form-login-card" id="card-my-accounts">
+                    <div class="text-title-login">
+                        <div class="text-logo-title-login">Gratika Accounts Accounts</div>
+                        <div>Select account</div>
+                    </div>
+                    <div class="div-select-accounts">
+                        <a href="" class="waves-effect waves-block" id="waves-block">
+                            <div class="link-div-account">
+                                <div class="div-group-account">
+                                    <img src="../images/user.png" width="30" height="30" class="img-my-account">
+                                    <span class="span-my-account1">me.serj.adam@yahoo.com</span>
+                                    <span class="span-my-account2">Mohamad Eko Praseyo</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="waves-effect waves-block" id="waves-block">
+                            <div class="link-div-account">
+                                <div class="div-group-account">
+                                    <img src="../images/user.jpg" width="30" height="30" class="img-my-account">
+                                    <span class="span-my-account1">me.serj.adam@gmail.com</span>
+                                    <span class="span-my-account2">Serj Adam</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="../login" class="waves-effect waves-block" id="waves-block">
+                            <div class="link-div-account">
+                                <div class="div-group-account">
+                                    <img src="../images/account-user.png" width="30" height="30" class="img-my-account">
+                                    <span class="span-my-account3">Use another account </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Jquery Core Js -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- Waves Effect Plugin Js -->
+    <script src="../plugins/node-waves/waves.js"></script>
+    <!-- Custom Js -->
+    <script src="../js/admin.js"></script>
+
+    <script type="text/javascript">
+        $('#btn-next').click(function () {
+            var email = $('#email').val();
+            if (email == '') {
+                swal('Warning', 'Lengkapi Data', 'warning');
+                return false;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
