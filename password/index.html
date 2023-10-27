@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <title>login - Akun Gratika Accounts</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../images/logo.jpg" type="image/x-icon" />
+
+    <!-- description -->
+    <meta name="description"
+        content="PT GEMANUSA SENTRA TEKNOLOGI , Alamat Tangcity Business Park D25 Jl. Jendral Sudirman No. 1 Tangerang 15117 , Phone : (+62-21) 2923-9669 , Fax : (+62-21) 2923-9672">
+    <!-- Keywords -->
+    <meta name="keywords"
+        content="Gratika Accountss , PT. Gemanusa Sentra Teknologi , Developer Software , IT , Technology , System Banking , AI , Developer Indonesia , Website Indonesia , Chip Arena , HIQ">
+
+    <!-- Google Fosnts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap Core Css -->
+    <link href="../plugins/bootstrap/css/bootstrap.css?v=1.6.1" rel="stylesheet" />
+    <!-- Waves Effect Css -->
+    <link href="../plugins/node-waves/waves.css?v=1.6.1" rel="stylesheet" />
+    <!-- Animation Css -->
+    <link href="../plugins/animate-css/animate.css?v=1.6.1" rel="stylesheet" />
+    <!-- Custom Css -->
+    <link href="../css/style-login.css?v=1.6.1" rel="stylesheet" />
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../css/themes/all-themes.css?v=1.6.1" rel="stylesheet" />
+    <link href="../css/modif-style.css?v=1.6.1" rel="stylesheet" />
+    <style>
+        .form-login-card {
+            box-shadow: 14px 4px 24px 7px rgba(0, 0, 0, 0.64);
+            -webkit-box-shadow: 14px 4px 24px 7px rgba(0, 0, 0, 0.64);
+            -moz-box-shadow: 14px 4px 24px 7px rgba(0, 0, 0, 0.64);
+        }
+
+        .login-box {
+            background-color: transparent;
+        }
+
+        .form-login-page {
+            background-image: url("https://wallpapers.com/images/hd/red-texture-background-1920-x-1080-6cncopqwlb4lrtli.jpg");
+        }
+
+        @media(max-width:552px) {
+            .login-box {
+                background-color: white;
+            }
+
+            .form-login-card {
+                box-shadow: unset;
+                -webkit-box-shadow: unset;
+                -moz-box-shadow: unset;
+            }
+        }
+    </style>
+</head>
+
+<body class="theme-red" style="background-color: white;font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;">
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Loading System...</p>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <section class="form-login-page">
+        <div class="login-box">
+            <form action="../">
+                <div class="card form-login-card" id="password-box">
+                    <div class="text-title-login">
+                        <div class="text-logo-title-password">Welcome</div>
+                        <a href="../my-accounts">
+                            <div class="div1-icon-password">
+                                <div class="div2-icon-password">
+                                    <img src="../images/icon svg/my-account2.svg" class="iconpassword">
+                                    <span class="span-icon-password">me.serj.adam@yahoo.com</span>
+                                    <img src="../images/icon svg/drop-down.svg" class="iconpassword-right">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="input-text-login">
+                        <div class="form-group form-float">
+                            <div class="form-line form-line3" id="class1">
+                                <input type="password" class="form-control" id="password" name="password" />
+                                <label class="form-label login-text-input" id="label-edit">Enter Your Password</label>
+                                <img src="../images/icon svg/see.svg" class="iconpassword-hide" id="visibility-login">
+                                <img src="../images/icon svg/no-see.svg" class="iconpassword-hide"
+                                    id="visibility-off-login">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link-div1-login">
+                        <div class="div-bottom-login">
+                            <div><a href="" class="link-body-content-home2 mm1">Forgot password?</a></div>
+                            <div class="div-btn-brkt">
+                                <a href="../home"> <button type="button" class="btn btn-lg btn-sign-log" id="btn-next"
+                                        style="font-size: 18px;">Next</button> </a>
+                            </div>
+                            <br />
+                            <br />
+                            <div class="div-bottom-or-password">- OR -</div>
+                        </div>
+                        <div class="">
+                            <a href="">
+                                <div class="div-link-login-other-fb">
+                                    <img src="../images/icon svg/fb3.svg" class="img-link-login-other" width="50"
+                                        height="30" />
+                                    <span class="text-link-login-other">Login Using Facebook</span>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="div-link-login-other-google">
+                                    <img src="../images/icon svg/google3.svg" class="img-link-login-other" width="50"
+                                        height="30" />
+                                    <span class="text-link-login-other">Login Using Google</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Jquery Core Js -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- Waves Effect Plugin Js -->
+    <script src="../plugins/node-waves/waves.js"></script>
+    <!-- Custom Js -->
+    <script src="../js/admin.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btn-next').click(function () {
+                var password = $('#password').val();
+                var buttonNext = $('#btn-next');
+                if (password == '') {
+                    alert('Please input your password !');
+                    buttonNext.attr('style', 'color:white;font-size: 18px;');
+                    return false;
+                }
+                else {
+                    window.location.href = "../home"
+                }
+            });
+
+            $('#visibility-login').click(function () {
+                $('#password').attr('type', 'text');
+                $('#visibility-off-login').attr('style', 'display:inline');
+                $('#visibility-login').attr('style', 'display:none');
+            });
+
+            $('#visibility-off-login').click(function () {
+                $('#password').attr('type', 'password');
+                $('#visibility-off-login').attr('style', 'display:none');
+                $('#visibility-login').attr('style', 'display:inline');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
