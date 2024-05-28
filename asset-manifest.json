@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/incloudyahope/static/css/main.f855e6bc.css",
+    "main.js": "/incloudyahope/static/js/main.3de1d0ad.js",
+    "static/js/453.b1e9baae.chunk.js": "/incloudyahope/static/js/453.b1e9baae.chunk.js",
+    "index.html": "/incloudyahope/index.html",
+    "main.f855e6bc.css.map": "/incloudyahope/static/css/main.f855e6bc.css.map",
+    "main.3de1d0ad.js.map": "/incloudyahope/static/js/main.3de1d0ad.js.map",
+    "453.b1e9baae.chunk.js.map": "/incloudyahope/static/js/453.b1e9baae.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.3de1d0ad.js"
+  ]
+}
