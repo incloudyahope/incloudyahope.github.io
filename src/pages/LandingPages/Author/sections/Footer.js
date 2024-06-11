@@ -15,19 +15,19 @@ Coded by www.creative-tim.com
 
 // @mui material components
 import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Link from "@mui/material/Link";
-import Stack from "@mui/material/Stack";
+// import Grid from "@mui/material/Grid";
+// import Link from "@mui/material/Link";
+// import Stack from "@mui/material/Stack";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// import MKTypography from "components/MKTypography";
 
 function Footer() {
   return (
     <MKBox component="footer" py={6}>
       <Container>
-        <Grid container>
+        {/* <Grid container>
           <Grid
             item
             xs={12}
@@ -160,7 +160,7 @@ function Footer() {
               <i className="fab fa-github" />
             </MKTypography>
           </Grid>
-        </Grid>
+        </Grid> */}
       </Container>
     </MKBox>
   );

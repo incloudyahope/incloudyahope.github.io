@@ -13,41 +13,36 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// // @mui material components
-// import Card from "@mui/material/Card";
+// @mui material components
+import Card from "@mui/material/Card";
 
-// // Material Kit 2 React components
-// import MKBox from "components/MKBox";
+// Material Kit 2 React components
+import MKBox from "components/MKBox";
 
-// // Material Kit 2 React examples
-// import DefaultNavbar from "examples/Navbars/DefaultNavbar";
+// Material Kit 2 React examples
+import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
-// // Author page sections
-// import Profile from "pages/LandingPages/Author/sections/Profile";
-// import Posts from "pages/LandingPages/Author/sections/Posts";
+// Author page sections
+import Profile from "pages/LandingPages/Author/sections/Profile";
+import Posts from "pages/LandingPages/Author/sections/Posts";
 // import Contact from "pages/LandingPages/Author/sections/Contact";
-// import Footer from "pages/LandingPages/Author/sections/Footer";
+import Footer from "pages/LandingPages/Author/sections/Footer";
 
-import "./index.css";
+// Routes
+import routes from "routes";
 
-// // Routes
-// import routes from "routes";
-
-// // Images
-// import bgImage from "assets/images/city-profile.jpg";
+// Images
+import bgImage from "assets/images/city-profile.jpg";
 
 function Author() {
   return (
     <>
-      <div className="dv">
-        <img src="/404.jpg" className="im" />
-      </div>
-      {/* <DefaultNavbar
+      <DefaultNavbar
         routes={routes}
         action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
+          type: "internal",
+          route: "https://meprasetyo.github.io/",
+          label: "Halaman Utama",
           color: "info",
         }}
         transparent
@@ -83,9 +78,9 @@ function Author() {
           <Profile />
           <Posts />
         </Card>
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
-      </MKBox> */}
+      </MKBox>
     </>
   );
 }
