@@ -13,31 +13,36 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// @mui material components
-import Card from "@mui/material/Card";
+// // @mui material components
+// import Card from "@mui/material/Card";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
+// // Material Kit 2 React components
+// import MKBox from "components/MKBox";
 
-// Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
+// // Material Kit 2 React examples
+// import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
-// Author page sections
-import Profile from "pages/LandingPages/Author/sections/Profile";
-import Posts from "pages/LandingPages/Author/sections/Posts";
-import Contact from "pages/LandingPages/Author/sections/Contact";
-import Footer from "pages/LandingPages/Author/sections/Footer";
+// // Author page sections
+// import Profile from "pages/LandingPages/Author/sections/Profile";
+// import Posts from "pages/LandingPages/Author/sections/Posts";
+// import Contact from "pages/LandingPages/Author/sections/Contact";
+// import Footer from "pages/LandingPages/Author/sections/Footer";
 
-// Routes
-import routes from "routes";
+import "./index.css";
 
-// Images
-import bgImage from "assets/images/city-profile.jpg";
+// // Routes
+// import routes from "routes";
+
+// // Images
+// import bgImage from "assets/images/city-profile.jpg";
 
 function Author() {
   return (
     <>
-      <DefaultNavbar
+      <div className="dv">
+        <img src="/404.jpg" className="im" />
+      </div>
+      {/* <DefaultNavbar
         routes={routes}
         action={{
           type: "external",
@@ -80,7 +85,7 @@ function Author() {
         </Card>
         <Contact />
         <Footer />
-      </MKBox>
+      </MKBox> */}
     </>
   );
 }

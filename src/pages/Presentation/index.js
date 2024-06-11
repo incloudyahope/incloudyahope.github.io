@@ -83,7 +83,7 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              REACT JS{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
