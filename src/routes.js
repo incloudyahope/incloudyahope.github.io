@@ -88,6 +88,11 @@ const routes = [
             route: "https://meprasetyo.github.io/cv/",
             // component: <ContactUs />,
           },
+          {
+            name: "Example AI",
+            route: "./gemini",
+            // component: <ContactUs />,
+          },
           // {
           //   name: "author",
           //   route: "/pages/landing-pages/author",

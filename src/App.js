@@ -31,6 +31,7 @@ import theme from "assets/theme";
 // Material Kit 2 React routes
 import routes from "routes";
 import Author from "pages/LandingPages/Author";
+import Author2 from "pages/LandingPages/Author2";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -60,6 +61,7 @@ export default function App() {
       <Routes>
         {getRoutes(routes)}
         <Route path="/me" element={<Author />} />
+        <Route path="/gemini" element={<Author2 />} />
         {/* <Route path="/presentation" element={<Presentation />} /> */}
         <Route path="*" element={<Author />} />
       </Routes>
