@@ -47,9 +47,9 @@ function Places() {
               title="King Fruit (E-commerce)"
               action={{
                 type: "internal",
-                route: "https://meprasetyo.github.io/project/images/a.PNG",
+                route: "https://kingfruit.co.id/",
                 color: "info",
-                label: "Lihat Gambar",
+                label: "Lihat Web",
               }}
             />
           </Grid>
@@ -71,9 +71,9 @@ function Places() {
               title="Modern Channel Telkomsel"
               action={{
                 type: "internal",
-                route: "/images/modchan.png",
+                route: "https://hera.telkomsel.com/",
                 color: "info",
-                label: "Lihat Gambar",
+                label: "Lihat Web",
               }}
             />
           </Grid>
@@ -95,9 +95,9 @@ function Places() {
               title="Barugasikola (Media Sosial, Management Siswa, E-book)"
               action={{
                 type: "internal",
-                route: "https://meprasetyo.github.io/project/images/b.PNG",
+                route: "https://www.youtube.com/watch?v=Ql2IPnXEdb4&t=9s",
                 color: "info",
-                label: "Lihat Gambar",
+                label: "Lihat Vidio",
               }}
             />
           </Grid>
@@ -107,9 +107,9 @@ function Places() {
               title="Web-Damia"
               action={{
                 type: "internal",
-                route: "https://meprasetyo.github.io/damia.PNG",
+                route: "https://aplikasi2.gratika.id/web-damia/auth",
                 color: "info",
-                label: "Lihat Gambar",
+                label: "Lihat Web",
               }}
             />
           </Grid>
@@ -132,9 +132,9 @@ function Places() {
               title="Best Advertising"
               action={{
                 type: "internal",
-                route: "https://meprasetyo.github.io/project/images/example/11.jpg",
+                route: "http://purwokerto.azurewebsites.net/best/",
                 color: "info",
-                label: "Lihat Gambar",
+                label: "Lihat Web",
               }}
             />
           </Grid>

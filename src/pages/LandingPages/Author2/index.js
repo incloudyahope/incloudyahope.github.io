@@ -75,8 +75,8 @@ function Author2() {
   }
 
   return (
-    <div className="root2" style={{ backgroundColor: "black", margin: "-33px" }}>
-      <div style={{ backgroundColor: "black", padding: "33px" }}>
+    <div className="root2" style={{ margin: "-33px" }}>
+      <div style={{ padding: "33px" }}>
         <div>
           <a href="https://www.google.com/" target="_blank" rel="noreferrer">
             <img

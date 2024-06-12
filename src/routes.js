@@ -88,11 +88,11 @@ const routes = [
             route: "https://meprasetyo.github.io/cv/",
             // component: <ContactUs />,
           },
-          {
-            name: "Example AI",
-            route: "./gemini",
-            // component: <ContactUs />,
-          },
+          // {
+          //   name: "Example AI",
+          //   route: "./gemini",
+          //   // component: <ContactUs />,
+          // },
           // {
           //   name: "author",
           //   route: "/pages/landing-pages/author",
@@ -112,137 +112,137 @@ const routes = [
       },
     ],
   },
-  // {
-  //   name: "sections",
-  //   icon: <Icon>view_day</Icon>,
-  //   collapse: [
-  //     {
-  //       name: "page sections",
-  //       description: "See all sections",
-  //       dropdown: true,
-  //       collapse: [
-  //         {
-  //           name: "page headers",
-  //           route: "/sections/page-sections/page-headers",
-  //           component: <PageHeaders />,
-  //         },
-  //         {
-  //           name: "features",
-  //           route: "/sections/page-sections/features",
-  //           component: <Features />,
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       name: "navigation",
-  //       description: "See all navigations",
-  //       dropdown: true,
-  //       collapse: [
-  //         {
-  //           name: "navbars",
-  //           route: "/sections/navigation/navbars",
-  //           component: <Navbars />,
-  //         },
-  //         {
-  //           name: "nav tabs",
-  //           route: "/sections/navigation/nav-tabs",
-  //           component: <NavTabs />,
-  //         },
-  //         {
-  //           name: "pagination",
-  //           route: "/sections/navigation/pagination",
-  //           component: <Pagination />,
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       name: "input areas",
-  //       description: "See all input areas",
-  //       dropdown: true,
-  //       collapse: [
-  //         {
-  //           name: "inputs",
-  //           route: "/sections/input-areas/inputs",
-  //           component: <Inputs />,
-  //         },
-  //         {
-  //           name: "forms",
-  //           route: "/sections/input-areas/forms",
-  //           component: <Forms />,
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       name: "attention catchers",
-  //       description: "See all examples",
-  //       dropdown: true,
-  //       collapse: [
-  //         {
-  //           name: "alerts",
-  //           route: "/sections/attention-catchers/alerts",
-  //           component: <Alerts />,
-  //         },
-  //         {
-  //           name: "modals",
-  //           route: "/sections/attention-catchers/modals",
-  //           component: <Modals />,
-  //         },
-  //         {
-  //           name: "tooltips & popovers",
-  //           route: "/sections/attention-catchers/tooltips-popovers",
-  //           component: <TooltipsPopovers />,
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       name: "elements",
-  //       description: "See all 32 examples",
-  //       dropdown: true,
-  //       collapse: [
-  //         {
-  //           name: "avatars",
-  //           route: "/sections/elements/avatars",
-  //           component: <Avatars />,
-  //         },
-  //         {
-  //           name: "badges",
-  //           route: "/sections/elements/badges",
-  //           component: <Badges />,
-  //         },
-  //         {
-  //           name: "breadcrumbs",
-  //           route: "/sections/elements/breadcrumbs",
-  //           component: <BreadcrumbsEl />,
-  //         },
-  //         {
-  //           name: "buttons",
-  //           route: "/sections/elements/buttons",
-  //           component: <Buttons />,
-  //         },
-  //         {
-  //           name: "dropdowns",
-  //           route: "/sections/elements/dropdowns",
-  //           component: <Dropdowns />,
-  //         },
-  //         {
-  //           name: "progress bars",
-  //           route: "/sections/elements/progress-bars",
-  //           component: <ProgressBars />,
-  //         },
-  //         {
-  //           name: "toggles",
-  //           route: "/sections/elements/toggles",
-  //           component: <Toggles />,
-  //         },
-  //         {
-  //           name: "typography",
-  //           route: "/sections/elements/typography",
-  //           component: <Typography />,
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
+  {
+    name: "Contoh System",
+    icon: <Icon>view_day</Icon>,
+    collapse: [
+      {
+        name: "Contoh AI",
+        description: "Lihat Semua ",
+        dropdown: true,
+        collapse: [
+          {
+            name: "Gemini API",
+            route: "./gemini",
+            // component: <PageHeaders />,
+          },
+          // {
+          //   name: "features",
+          //   route: "/sections/page-sections/features",
+          //   component: <Features />,
+          // },
+        ],
+      },
+      {
+        name: "Lainnya",
+        description: "Lihat Semua",
+        dropdown: true,
+        collapse: [
+          {
+            name: "SEO",
+            route: "https://www.youtube.com/watch?v=UOBYpzoYXUE&ab_channel=M.EkoPrasetyo",
+            // component: <Navbars />,
+          },
+          {
+            name: "Signup",
+            route: "https://meprasetyo.github.io/accounts/signup/",
+            // component: <NavTabs />,
+          },
+          {
+            name: "Login",
+            route: "https://meprasetyo.github.io/accounts/login/",
+            // component: <Pagination />,
+          },
+        ],
+      },
+      // {
+      //   name: "input areas",
+      //   description: "See all input areas",
+      //   dropdown: true,
+      //   collapse: [
+      //     {
+      //       name: "inputs",
+      //       route: "/sections/input-areas/inputs",
+      //       component: <Inputs />,
+      //     },
+      //     {
+      //       name: "forms",
+      //       route: "/sections/input-areas/forms",
+      //       component: <Forms />,
+      //     },
+      //   ],
+      // },
+      // {
+      //   name: "attention catchers",
+      //   description: "See all examples",
+      //   dropdown: true,
+      //   collapse: [
+      //     {
+      //       name: "alerts",
+      //       route: "/sections/attention-catchers/alerts",
+      //       component: <Alerts />,
+      //     },
+      //     {
+      //       name: "modals",
+      //       route: "/sections/attention-catchers/modals",
+      //       component: <Modals />,
+      //     },
+      //     {
+      //       name: "tooltips & popovers",
+      //       route: "/sections/attention-catchers/tooltips-popovers",
+      //       component: <TooltipsPopovers />,
+      //     },
+      //   ],
+      // },
+      // {
+      //   name: "elements",
+      //   description: "See all 32 examples",
+      //   dropdown: true,
+      //   collapse: [
+      //     {
+      //       name: "avatars",
+      //       route: "/sections/elements/avatars",
+      //       component: <Avatars />,
+      //     },
+      //     {
+      //       name: "badges",
+      //       route: "/sections/elements/badges",
+      //       component: <Badges />,
+      //     },
+      //     {
+      //       name: "breadcrumbs",
+      //       route: "/sections/elements/breadcrumbs",
+      //       component: <BreadcrumbsEl />,
+      //     },
+      //     {
+      //       name: "buttons",
+      //       route: "/sections/elements/buttons",
+      //       component: <Buttons />,
+      //     },
+      //     {
+      //       name: "dropdowns",
+      //       route: "/sections/elements/dropdowns",
+      //       component: <Dropdowns />,
+      //     },
+      //     {
+      //       name: "progress bars",
+      //       route: "/sections/elements/progress-bars",
+      //       component: <ProgressBars />,
+      //     },
+      //     {
+      //       name: "toggles",
+      //       route: "/sections/elements/toggles",
+      //       component: <Toggles />,
+      //     },
+      //     {
+      //       name: "typography",
+      //       route: "/sections/elements/typography",
+      //       component: <Typography />,
+      //     },
+      //   ],
+      // },
+    ],
+  },
   // {
   //   name: "docs",
   //   icon: <Icon>article</Icon>,

@@ -1,32 +1,49 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-
+// import nodemailer from 'nodemailer';
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
+// import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
-
 // Images
 import bgImage from "assets/images/examples/blog2.jpg";
 
 function Contact() {
+  // const [email, setEmail] = useState('');
+  // const [message, setMessage] = useState('');
+  // const handleEmailChange = () => {
+  //   setEmail('me.serj.adam@gmail.com');
+  // };
+  // const handleMessageChange = (e) => {
+  //   setMessage(e.target.value);
+  // };
+  // useEffect(() => {
+  //   handleEmailChange()
+  // }, []);
+  // const sendEmail = async () => {
+  //   const transporter = nodemailer.createTransport({
+  //     host: 'smtp.example.com',
+  //     port: 587,
+  //     secure: false,
+  //     auth: {
+  //       user: 'your-email@example.com',
+  //       pass: 'your-password',
+  //     },
+  //   });
+  //   const mailOptions = {
+  //     from: 'your-email@example.com',
+  //     to: email,
+  //     subject: 'Hello from ReactJS',
+  //     text: message,
+  //   };
+  //   try {
+  //     await transporter.sendMail(mailOptions);
+  //     console.log('Email sent successfully');
+  //   } catch (error) {
+  //     console.error('Error sending email:', error);
+  //   }
+  // };
   return (
     <MKBox component="section" py={{ xs: 0, lg: 6 }}>
       <Container>
@@ -70,7 +87,7 @@ function Contact() {
                       Contact Information
                     </MKTypography>
                     <MKTypography variant="body2" color="white" opacity={0.8} mb={3}>
-                      Fill up the form and our Team will get back to you within 24 hours.
+                      {/* Fill up the form and our Team will get back to you within 24 hours. */}
                     </MKTypography>
                     <MKBox display="flex" p={1}>
                       <MKTypography variant="button" color="white">
@@ -84,7 +101,7 @@ function Contact() {
                         ml={2}
                         fontWeight="regular"
                       >
-                        (+40) 772 100 200
+                        0812-8978-4331
                       </MKTypography>
                     </MKBox>
                     <MKBox display="flex" color="white" p={1}>
@@ -99,7 +116,7 @@ function Contact() {
                         ml={2}
                         fontWeight="regular"
                       >
-                        hello@creative-tim.com
+                        me.serj.adam@gmail.com
                       </MKTypography>
                     </MKBox>
                     <MKBox display="flex" color="white" p={1}>
@@ -114,10 +131,10 @@ function Contact() {
                         ml={2}
                         fontWeight="regular"
                       >
-                        Dyonisie Wolf Bucharest, RO 010458
+                        Jakarta - Indonesia
                       </MKTypography>
                     </MKBox>
-                    <MKBox mt={3}>
+                    {/* <MKBox mt={3}>
                       <MKButton variant="text" color="white" size="large" iconOnly>
                         <i className="fab fa-facebook" style={{ fontSize: "1.25rem" }} />
                       </MKButton>
@@ -130,7 +147,7 @@ function Contact() {
                       <MKButton variant="text" color="white" size="large" iconOnly>
                         <i className="fab fa-instagram" style={{ fontSize: "1.25rem" }} />
                       </MKButton>
-                    </MKBox>
+                    </MKBox> */}
                   </MKBox>
                 </MKBox>
               </Grid>
@@ -146,7 +163,7 @@ function Contact() {
                   </MKBox>
                   <MKBox pt={0.5} pb={3} px={3}>
                     <Grid container>
-                      <Grid item xs={12} pr={1} mb={6}>
+                      {/* <Grid item xs={12} pr={1} mb={6}>
                         <MKInput
                           variant="standard"
                           label="My name is"
@@ -163,9 +180,10 @@ function Contact() {
                           InputLabelProps={{ shrink: true }}
                           fullWidth
                         />
-                      </Grid>
+                      </Grid> */}
                       <Grid item xs={12} pr={1} mb={6}>
                         <MKInput
+                          // onChange={handleMessageChange}
                           variant="standard"
                           label="Your message"
                           placeholder="I want to say that..."
@@ -176,7 +194,7 @@ function Contact() {
                         />
                       </Grid>
                     </Grid>
-                    <Grid
+                    {/* <Grid
                       container
                       item
                       xs={12}
@@ -185,10 +203,10 @@ function Contact() {
                       textAlign="right"
                       ml="auto"
                     >
-                      <MKButton variant="gradient" color="info">
+                      <MKButton variant="gradient" onClick={sendEmail} color="info">
                         Send Message
                       </MKButton>
-                    </Grid>
+                    </Grid> */}
                   </MKBox>
                 </MKBox>
               </Grid>
