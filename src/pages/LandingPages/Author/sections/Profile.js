@@ -38,10 +38,10 @@ function Profile() {
           <Grid container justifyContent="center" py={6}>
             <Grid item xs={12} md={7} mx={{ xs: "auto", sm: 6, md: 1 }}>
               <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={1}>
-                <MKTypography variant="h3">Mohamad Eko Prasetyo, S.Kom.</MKTypography>
+                <MKTypography variant="h4">Mohamad Eko Prasetyo, S.Kom.</MKTypography>
                 <a href="https://dev.to/meprasetyo">
-                  <MKButton variant="outlined" color="info" size="small">
-                    Follow
+                  <MKButton className="dev" variant="outlined" color="info" size="small">
+                    DEV
                   </MKButton>
                 </a>
               </MKBox>
@@ -72,12 +72,27 @@ function Profile() {
                 </Grid>
               </Grid> */}
               <MKTypography variant="body1" fontWeight="light" color="text">
-                Perkenalkan, Saya Mohamad Eko Prasetyo, S.Kom. <br />
+                {/* Perkenalkan, Saya Mohamad Eko Prasetyo, S.Kom. <br /> */}
+                <hr style={{ marginTop: "20px", marginBottom: "10px" }} />
+                <div className="font14">
+                  <b>Profil</b>
+                </div>
+                <div className="font14">Nama : Mohamad Eko Prasetyo</div>
                 <div className="font14">Kota Asal : Purwokerto</div>
                 <div className="font14">Usia : 31</div>
                 <div className="font14">Hobby : Bernyanyi</div>
                 <div className="font14">Agama : Islam</div>
                 <div className="font14">Status : Menikah</div>
+                {/* <br /> */}
+                <hr style={{ marginTop: "10px", marginBottom: "10px" }} />
+                {/* <br /> */}
+                <div className="font14">
+                  <b>Pendidikan Terakhir</b>
+                </div>
+                <div className="font14">STIKOM Yos Sudarso Purwokerto</div>
+                <div className="font14">Jurusan : S1 - Sistem Informatika</div>
+                <div className="font14">IPK : 3,64</div>
+                <hr style={{ marginTop: "10px", marginBottom: "10px" }} />
                 <MKTypography
                   component="a"
                   target="_blank"

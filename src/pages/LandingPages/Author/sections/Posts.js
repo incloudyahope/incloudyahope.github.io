@@ -36,11 +36,11 @@ function Places() {
     <MKBox component="section" py={2}>
       <Container>
         <Grid container item xs={12} lg={6}>
-          <MKTypography variant="h3" mb={6}>
+          <MKTypography variant="h4" mb={6}>
             Proyek Saya
           </MKTypography>
         </Grid>
-        <Grid container spacing={3}>
+        <Grid container spacing={3} style={{ padding: "35px" }}>
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image="https://meprasetyo.github.io/project/images/a.PNG"
