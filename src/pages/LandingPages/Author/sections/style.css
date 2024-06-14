@@ -10,7 +10,7 @@
 
 .css-164x3w3-MuiTypography-root{
     font-size: 16px !important;
-    /* margin-bottom: 1000px !important; */
+    margin-bottom: 0px !important;
 }
 
 .css-4vp0s-MuiTypography-root {
@@ -33,4 +33,12 @@
         padding-top: 96px;
         padding-bottom: unset;
     }
+}
+
+.css-16pa0vv-MuiTypography-root {
+    margin-bottom: 5px !important;
+}
+
+.css-ov3aul-MuiTypography-root .material-icons, .css-ov3aul-MuiTypography-root .material-icons-round, .css-ov3aul-MuiTypography-root {
+    display: none !important;
 }
