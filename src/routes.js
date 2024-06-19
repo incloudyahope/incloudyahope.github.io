@@ -38,6 +38,7 @@ Coded by www.creative-tim.com
 
 // @mui material components
 import Icon from "@mui/material/Icon";
+import Author2 from "pages/LandingPages/Author2";
 
 // @mui icons
 // import GitHubIcon from "@mui/icons-material/GitHub";
@@ -45,7 +46,7 @@ import Icon from "@mui/material/Icon";
 // Pages
 // import AboutUs from "layouts/pages/landing-pages/about-us";
 // import ContactUs from "layouts/pages/landing-pages/contact-us";
-// import Author from "layouts/pages/landing-pages/author";
+// import Author2 from "layouts/pages/landing-pages/Author2";
 // import SignIn from "layouts/pages/authentication/sign-in";
 
 // Sections
@@ -123,8 +124,8 @@ const routes = [
         collapse: [
           {
             name: "Gemini API",
-            route: "https://incloudyahope.github.io/gemini",
-            // component: <PageHeaders />,
+            route: "/gemini-ai",
+            component: <Author2 />,
           },
           // {
           //   name: "features",
