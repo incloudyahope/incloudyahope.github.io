@@ -123,7 +123,7 @@ const routes = [
         collapse: [
           {
             name: "Gemini API",
-            route: "./gemini",
+            route: "https://incloudyahope.github.io/gemini",
             // component: <PageHeaders />,
           },
           // {
