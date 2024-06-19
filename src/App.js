@@ -60,10 +60,10 @@ export default function App() {
       <CssBaseline />
       <Routes>
         {getRoutes(routes)}
-        <Route path="/me" element={<Author />} />
-        <Route path="/gemini" element={<Author2 />} />
+        <Route path="" element={<Author />} />
+        <Route path="/gemini-ai" element={<Author2 />} />
         {/* <Route path="/presentation" element={<Presentation />} /> */}
-        <Route path="*" element={<Author />} />
+        {/* <Route path="*" element={<Author />} /> */}
       </Routes>
     </ThemeProvider>
   );
