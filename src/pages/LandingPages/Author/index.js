@@ -42,7 +42,7 @@ function Author() {
         action={{
           type: "internal",
           route: "https://meprasetyo.github.io/",
-          label: "Halaman Utama",
+          label: "Home Page",
           color: "info",
         }}
         transparent

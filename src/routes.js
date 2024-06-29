@@ -71,16 +71,16 @@ import Author2 from "pages/LandingPages/Author2";
 
 const routes = [
   {
-    name: "pages",
+    name: "Pages",
     icon: <Icon>dashboard</Icon>,
     columns: 1,
     rowsPerColumn: 2,
     collapse: [
       {
-        name: "Tentang Saya",
+        name: "About Me",
         collapse: [
           {
-            name: "Tentang Saya",
+            name: "About Me",
             route: "https://meprasetyo.github.io/",
             // component: <AboutUs />,
           },
@@ -102,10 +102,10 @@ const routes = [
         ],
       },
       {
-        name: "Proyek",
+        name: "Projects",
         collapse: [
           {
-            name: "Proyek Saya",
+            name: "My Projects",
             route: "https://meprasetyo.github.io/project/",
             // component: <SignIn />,
           },
@@ -114,12 +114,12 @@ const routes = [
     ],
   },
   {
-    name: "Contoh System",
+    name: "AI Examples",
     icon: <Icon>view_day</Icon>,
     collapse: [
       {
-        name: "Contoh AI",
-        description: "Lihat Semua ",
+        name: "AI Examples",
+        description: "See All",
         dropdown: true,
         collapse: [
           {
@@ -135,8 +135,8 @@ const routes = [
         ],
       },
       {
-        name: "Lainnya",
-        description: "Lihat Semua",
+        name: "Others",
+        description: "See All",
         dropdown: true,
         collapse: [
           {
@@ -156,6 +156,18 @@ const routes = [
           },
         ],
       },
+      // {
+      //   name: "input areas",
+      //   description: "See all input areas",
+      //   dropdown: true,
+      //   collapse: [
+      //     {
+      //       name: "inputs",
+      //       route: "/sections/input-areas/inputs",
+      //       component: <Inputs />,
+      //     },
+      //     {
+
       // {
       //   name: "input areas",
       //   description: "See all input areas",

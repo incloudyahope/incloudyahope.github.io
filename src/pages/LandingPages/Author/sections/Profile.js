@@ -72,26 +72,26 @@ function Profile() {
                 </Grid>
               </Grid> */}
               <MKTypography variant="body1" fontWeight="light" color="text">
-                {/* Perkenalkan, Saya Mohamad Eko Prasetyo, S.Kom. <br /> */}
+                {/* Introduce myself, I am Mohamad Eko Prasetyo, S.Kom. <br /> */}
                 <hr style={{ marginTop: "20px", marginBottom: "10px" }} />
                 <div className="font14">
-                  <b>Profil</b>
+                  <b>Profile</b>
                 </div>
-                <div className="font14">Nama : Mohamad Eko Prasetyo</div>
-                <div className="font14">Kota Asal : Purwokerto</div>
-                <div className="font14">Usia : 31</div>
-                <div className="font14">Hobby : Bernyanyi</div>
-                <div className="font14">Agama : Islam</div>
-                <div className="font14">Status : Menikah</div>
+                <div className="font14">Name: Mohamad Eko Prasetyo</div>
+                <div className="font14">Hometown: Purwokerto</div>
+                <div className="font14">Age: 31</div>
+                <div className="font14">Hobby: Singing</div>
+                <div className="font14">Religion: Islam</div>
+                <div className="font14">Marital Status: Married</div>
                 {/* <br /> */}
                 <hr style={{ marginTop: "10px", marginBottom: "10px" }} />
                 {/* <br /> */}
                 <div className="font14">
-                  <b>Pendidikan Terakhir</b>
+                  <b>Latest Education</b>
                 </div>
                 <div className="font14">STIKOM Yos Sudarso Purwokerto</div>
-                <div className="font14">Jurusan : S1 - Sistem Informatika</div>
-                <div className="font14">IPK : 3,64</div>
+                <div className="font14">Major: Bachelor of Science in Information Systems</div>
+                <div className="font14">GPA: 3.64</div>
                 <hr style={{ marginTop: "10px", marginBottom: "10px" }} />
                 <MKTypography
                   component="a"
