@@ -41,7 +41,7 @@ function Author() {
         routes={routes}
         action={{
           type: "internal",
-          route: "https://meprasetyo.github.io/",
+          route: "https://meprasetyo666.github.io/",
           label: "Home Page",
           color: "info",
         }}
