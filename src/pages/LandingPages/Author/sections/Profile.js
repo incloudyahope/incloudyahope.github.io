@@ -96,7 +96,7 @@ function Profile() {
                 <MKTypography
                   component="a"
                   target="_blank"
-                  href="https://meprasetyo.github.io/cv/"
+                  href="https://meprasetyo666.github.io/cv/"
                   variant="body1"
                   fontWeight="light"
                   color="info"
