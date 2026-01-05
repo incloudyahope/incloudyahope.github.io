@@ -1,7 +1,5 @@
-import React from 'react'
+
 import Hero from './components/Hero'
-import Experience from './components/Experience'
-import Skills from './components/Skills'
 import SkillsGrid from './components/SkillsGrid'
 import SkillsList from './components/SkillsList'
 import Timeline from './components/Timeline'
