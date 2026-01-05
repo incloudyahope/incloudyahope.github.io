@@ -75,9 +75,9 @@ const resume = {
   experiences: [
     {title: 'Senior Product Development Officer', org: 'PT.GRATIKA', period: '2021 - Sekarang', desc: 'Senior Product Development Officer'},
     {title: 'Web Programmer / Full Stack', org: 'PT.Devond Teknologi', period: '2019 - 2021', desc: 'Web Programmer / Full Stack'},
-    {title: 'Programmer & IT Support', org: 'PT.Property Sarijaya Gemilang', period: 'Jan 2016 - July 2019', desc: ''},
-    {title: 'Web Programmer', org: 'CV.Java Multi Mandiri', period: 'Dec 2015 - Dec 2016', desc: ''},
-    {title: 'Admin & Supervisor', org: 'PT. Prospektif Multi Karya', period: '2011 - 2012', desc: ''}
+    {title: 'Programmer & IT Support', org: 'PT.Property Sarijaya Gemilang', period: 'Jan 2019 - July 2019', desc: 'Programmer & IT Support'},
+    {title: 'Web Programmer', org: 'CV.Java Multi Mandiri', period: 'Dec 2017 - Dec 2018', desc: 'Web Programmer'},
+    {title: 'Admin & Storeman', org: 'PT. Prospektif Multi Karya', period: '2011 - 2012', desc: 'Admin & Storeman'}
   ]
 }
 
