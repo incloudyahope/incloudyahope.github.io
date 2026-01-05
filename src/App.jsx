@@ -20,7 +20,7 @@ export default function App(){
 
   return (
     <div className="app">
-      <div className="nav-dots">
+      <div className="nav-dots" style={{display: 'none'}}>
         <div className="dot active" onClick={() => scrollToSection('hero-section')}></div>
         <div className="dot" onClick={() => scrollToSection('main')}></div>
         <div className="dot" onClick={() => scrollToSection('contact-biodata')}></div>

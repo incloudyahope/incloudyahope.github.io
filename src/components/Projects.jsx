@@ -3,6 +3,9 @@ import React, { memo, useState, useEffect } from 'react'
 function Projects({items}){
   const [selectedImage, setSelectedImage] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(0)
+  // Debug: log incoming items count
+  console.log('Projects items count:', items && items.length)
+
 
   const openModal = (imageSrc, title, index) => {
     setSelectedImage({ src: imageSrc, title })
@@ -73,17 +76,25 @@ function Projects({items}){
     <>
       <section className="card projects">
         <h2>Projects</h2>
+        <div className="projects-count" style={{marginBottom:8,color:'var(--muted)',fontSize:13}}>Showing {items.length} projects</div>
         <div className="projects-grid">
           {items.map((p,i)=> {
             const title = p.title || `Project ${i+1}`
             const hasImage = p.thumb && p.thumb.trim() !== ''
+            const hasLink = p.link && p.link.trim() !== ''
             
             return (
               <div 
                 key={i} 
                 className="project-thumb"
-                onClick={() => hasImage && openModal(p.thumb, title, i)}
-                style={{ cursor: hasImage ? 'pointer' : 'default' }}
+                onClick={() => {
+                  if (!hasImage && hasLink) {
+                    window.open(p.link, '_blank', 'noopener,noreferrer')
+                  } else if (hasImage) {
+                    openModal(p.thumb, title, i)
+                  }
+                }}
+                style={{ cursor: hasImage || hasLink ? 'pointer' : 'default' }}
               >
                 {hasImage ? (
                   <img 
@@ -91,9 +102,23 @@ function Projects({items}){
                     alt={title}
                     loading="lazy"
                     decoding="async"
+                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23f5f5f5%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23777%22 font-size=%2220%22%3ENo image%3C/text%3E%3C/svg%3E'; }}
                   />
                 ) : (
                   <div className="thumb-inner">{title}</div>
+                )}
+
+                {hasLink && (
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                    onClick={(e) => e.stopPropagation()}
+                    aria-label={`View details for ${title}`}
+                  >
+                    🔗 View details
+                  </a>
                 )}
               </div>
             )

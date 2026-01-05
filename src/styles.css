@@ -89,6 +89,15 @@ main{display:flex;gap:40px;margin-top:60px}
 .project-thumb img{width:100%;height:100%;object-fit:contain;display:block;position:relative;z-index:2;image-rendering:auto;transition:transform 0.3s}
 .project-thumb:hover img{transform:scale(1.05)}
 
+/* Project link button */
+.project-link{position:absolute;top:8px;right:8px;background:#000;color:#fff;border-radius:6px;padding:6px 8px;font-size:13px;z-index:3;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:8px}
+.project-link:hover{background:#222}
+.project-link svg{width:14px;height:14px}
+
+@media(max-width:768px){
+  .project-link{font-size:12px;padding:5px 7px}
+}
+
 /* Image Modal */
 .image-modal-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.9);display:flex;align-items:center;justify-content:center;z-index:10000;padding:20px;animation:fadeIn 0.2s}
 .image-modal-content{position:relative;max-width:90vw;max-height:90vh;display:flex;flex-direction:column;align-items:center;animation:zoomIn 0.3s}
