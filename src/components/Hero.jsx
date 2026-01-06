@@ -17,7 +17,7 @@ export default function Hero({data}){
           </div>
         </div>
         <div className="hero-right">
-          <div className="hero-photo-frame">
+          <div className="hero-photo-frame" style={{maxWidth:300, marginTop:40}}>
             <img src={data?.photo || '/images/person1.jpg'} alt={name} />
             <div className="photo-pattern"></div>
           </div>

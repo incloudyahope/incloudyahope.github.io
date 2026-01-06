@@ -7,8 +7,8 @@ function Projects({items}){
   console.log('Projects items count:', items && items.length)
 
 
-  const openModal = (imageSrc, title, index) => {
-    setSelectedImage({ src: imageSrc, title })
+  const openModal = (imageSrc, title, index, desc) => {
+    setSelectedImage({ src: imageSrc, title, desc })
     setCurrentIndex(index)
   }
 
@@ -91,22 +91,24 @@ function Projects({items}){
                   if (!hasImage && hasLink) {
                     window.open(p.link, '_blank', 'noopener,noreferrer')
                   } else if (hasImage) {
-                    openModal(p.thumb, title, i)
+                    openModal(p.thumb, title, i, p.desc)
                   }
                 }}
                 style={{ cursor: hasImage || hasLink ? 'pointer' : 'default' }}
               >
-                {hasImage ? (
-                  <img 
-                    src={p.thumb} 
-                    alt={title}
-                    loading="lazy"
-                    decoding="async"
-                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23f5f5f5%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23777%22 font-size=%2220%22%3ENo image%3C/text%3E%3C/svg%3E'; }}
-                  />
-                ) : (
-                  <div className="thumb-inner">{title}</div>
-                )}
+                <div className="thumb-media">
+                  {hasImage ? (
+                    <img 
+                      src={p.thumb} 
+                      alt={title}
+                      loading="lazy"
+                      decoding="async"
+                      onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23f5f5f5%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23777%22 font-size=%2220%22%3ENo image%3C/text%3E%3C/svg%3E'; }}
+                    />
+                  ) : (
+                    <div className="thumb-inner">{title}</div>
+                  )}
+                </div>
 
                 {hasLink && (
                   <a
@@ -119,6 +121,21 @@ function Projects({items}){
                   >
                     🔗 View details
                   </a>
+                )}
+
+                {p.desc && (
+                  <div className="project-caption" aria-hidden={!p.desc}>
+                    {p.desc}
+                    {p.desc.length > 140 && (
+                      <button
+                        className="project-readmore"
+                        onClick={(e) => { e.stopPropagation(); openModal(p.thumb, title, i, p.desc) }}
+                        aria-label={`Read more about ${title}`}
+                      >
+                        Read more
+                      </button>
+                    )}
+                  </div>
                 )}
               </div>
             )
@@ -139,6 +156,9 @@ function Projects({items}){
             <img src={selectedImage.src} alt={selectedImage.title} />
             {selectedImage.title && (
               <div className="image-modal-title">{selectedImage.title}</div>
+            )}
+            {selectedImage.desc && (
+              <div className="image-modal-desc">{selectedImage.desc}</div>
             )}
           </div>
         </div>

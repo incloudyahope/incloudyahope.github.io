@@ -1,4 +1,4 @@
-
+import React from 'react'
 import Hero from './components/Hero'
 import SkillsGrid from './components/SkillsGrid'
 import SkillsList from './components/SkillsList'
